@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Školské Dokumenty – SPŠT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f7ff;
+            color: #333;
+            padding: 40px;
+            margin: 0;
+        }
+
+        h1 {
+            color: #000000;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 28px;
+            margin-top: 30px;
+            border-bottom: 2px solid #0044cc;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        .dokumenty a {
+            display: block;
+            background-color: #0044cc;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .dokumenty a:hover {
+            background-color: #0033aa;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Logo styling */
+        .logo {
+            position: absolute;
+            top: 13px; 
+            right: 150px;
+            width: 200px;
+            height: auto;
+        }
+
+        /* Dokument emoji - umiestnenie do ľavého horného rohu */
+        .document-emoji {
+            position: absolute;
+            top: 40px;
+            left: 250px; /* Umiesťujeme ho na ľavý okraj */
+            width: 90px;  /* Zmeníme veľkosť obrázku */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pridanie dokument emoji do ľavého horného rohu -->
+    <img src="images/document.png" alt="Document emoji" class="document-emoji">
+
+    <!-- Pridanie loga do pravého horného rohu -->
+    <img src="images/logo.png" alt="Logo školy" class="logo">
+
+    <h1>Školské Dokumenty – SPŠT</h1>
+    <p>Vitajte na stránke, kde nájdete všetky potrebné školské dokumenty na stiahnutie. Vyberte si požadovanú sekciu podľa svojich potrieb.</p>
+
+    <div class="section">
+        <h2>Pre žiakov a rodičov:</h2>
+        <div class="dokumenty">
+            <a href="dokumenty/prihlaska_na_studium.pdf" download>📄 Prihláška na štúdium</a>
+            <a href="dokumenty/odhlaska_zo_skoly.pdf" download>📄 Odhláška zo školy</a>
+            <a href="dokumenty/ziadost_prestup.pdf" download>📄 Žiadosť o prestup na inú školu</a>
+            <a href="dokumenty/individualny_plan.pdf" download>📄 Žiadosť o individuálny študijný plán</a>
+            <a href="dokumenty/suhlas_gdpr.pdf" download>📄 Súhlas so spracovaním osobných údajov (GDPR)</a>
+            <a href="dokumenty/uvolneie_ziaka.pdf" download>📄 Žiadosť o uvoľnenie žiaka</a>
+            <a href="dokumenty/prihlaska_jedalen.pdf" download>📄 Prihláška na stravovanie</a>
+            <a href="dokumenty/odhlaska_jedalen.pdf" download>📄 Odhláška zo školskej jedálne</a>
+            <a href="dokumenty/zmena_udajov.pdf" download>📄 Žiadosť o zmenu osobných údajov</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Pre učiteľov a zamestnancov školy:</h2>
+        <div class="dokumenty">
+            <a href="dokumenty/ziadost_dovolenka.pdf" download>📄 Žiadosť o dovolenku</a>
+            <a href="dokumenty/ziadost_nahradne_volno.pdf" download>📄 Žiadosť o náhradné voľno</a>
+            <a href="dokumenty/ziadost_prerusenie_pomeru.pdf" download>📄 Žiadosť o prerušenie pracovného pomeru</a>
+            <a href="dokumenty/ziadost_predlzenie_pomeru.pdf" download>📄 Žiadosť o predĺženie pracovného pomeru</a>
+            <a href="dokumenty/ziadost_potvrdenie_zamestnanie.pdf" download>📄 Žiadosť o potvrdenie o zamestnaní</a>
+            <a href="dokumenty/zaznam_uraz.pdf" download>📄 Záznam o úraze žiaka</a>
+            <a href="dokumenty/oznam_neklasifikovanie.pdf" download>📄 Oznam o neklasifikovaní žiaka</a>
+            <a href="dokumenty/navrh_individualny_plan.pdf" download>📄 Návrh na individuálny študijný plán pre žiaka</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Stredná priemyselná škola technická, Martin | <a href="https://spsmt.sk/">Oficiálna stránka školy</a></p>
+    </div>
+
+</body>
+</html>
