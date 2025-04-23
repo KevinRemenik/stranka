@@ -15,8 +15,8 @@
 
         h1 {
             color: #000000;
-            text-align: center;
             font-size: 36px;
+            margin: 0;
         }
 
         h2 {
@@ -29,7 +29,6 @@
 
         p {
             font-size: 18px;
-            text-align: center;
             margin-top: 10px;
         }
 
@@ -60,36 +59,44 @@
             color: #555;
         }
 
-        /* Logo styling */
-        .logo {
-            position: absolute;
-            top: 13px; 
-            right: 150px;
-            width: 200px;
-            height: auto;
+        /* Flexbox hlavička */
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            text-align: center;
         }
 
-        /* Dokument emoji - umiestnenie do ľavého horného rohu */
-        .document-emoji {
-            position: absolute;
-            top: 40px;
-            left: 250px; /* Umiesťujeme ho na ľavý okraj */
-            width: 90px;  /* Zmeníme veľkosť obrázku */
+        .header-text {
+            flex: 1;
+            padding: 0 20px;
+            min-width: 250px;
+        }
+
+        .header-icon {
+            width: 120px;
             height: auto;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Pridanie dokument emoji do ľavého horného rohu -->
-    <img src="images/document.png" alt="Document emoji" class="document-emoji">
+    <!-- HLAVIČKA -->
+    <div class="header-top">
+        <img src="images/document.png" alt="Document emoji" class="header-icon">
+        
+        <div class="header-text">
+            <h1>Školské Dokumenty – SPŠT</h1>
+            <p>Vitajte na stránke, kde nájdete všetky potrebné školské dokumenty na stiahnutie. Vyberte si požadovanú sekciu podľa svojich potrieb.</p>
+        </div>
 
-    <!-- Pridanie loga do pravého horného rohu -->
-    <img src="images/logo.png" alt="Logo školy" class="logo">
+        <img src="images/logo.png" alt="Logo školy" class="header-icon">
+    </div>
 
-    <h1>Školské Dokumenty – SPŠT</h1>
-    <p>Vitajte na stránke, kde nájdete všetky potrebné školské dokumenty na stiahnutie. Vyberte si požadovanú sekciu podľa svojich potrieb.</p>
-
+    <!-- SEKCIÁ PRE ŽIAKOV -->
     <div class="section">
         <h2>Pre žiakov a rodičov:</h2>
         <div class="dokumenty">
@@ -105,6 +112,7 @@
         </div>
     </div>
 
+    <!-- SEKCIÁ PRE UČITEĽOV -->
     <div class="section">
         <h2>Pre učiteľov a zamestnancov školy:</h2>
         <div class="dokumenty">
